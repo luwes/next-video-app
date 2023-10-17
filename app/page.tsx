@@ -31,7 +31,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Video style={{ width: 640, aspectRatio: 2.4 }} src={awesomeVideo} />
+        <Video style={{ width: 640, aspectRatio: 16/9 }} src={awesomeVideo} />
       </div>
 
       <div className={styles.grid}>
