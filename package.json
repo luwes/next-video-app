@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,9 +15,10 @@
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.4",
     "next": "13.5.4",
-    "next-video": "^0.7.2",
+    "next-video": "^0.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-player": "^2.13.0",
     "typescript": "5.2.2"
   }
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Video from './video';
+import { Video, ReactPlayerAsVideo } from './video';
 import awesomeVideo from '/videos/BBB-720p-1min.mp4';
 
 export default function Home() {
@@ -31,7 +31,13 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Video style={{ width: 640, aspectRatio: 16/9 }} src={awesomeVideo} />
+        <style>{`.flex { display: flex; }`}</style>
+        <Video
+          className="flex"
+          style={{ width: 640, aspectRatio: 16/9 }}
+          src={awesomeVideo}
+          controls={true}
+        />
       </div>
 
       <div className={styles.grid}>
