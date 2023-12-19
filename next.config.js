@@ -5,5 +5,10 @@ const { withNextVideo } = require('next-video/process')
 const nextConfig = {}
 
 module.exports = withNextVideo(nextConfig, {
-  provider: 'vercel-blob'
+  provider: 'amazon-s3',
+  providerConfig: {
+    'amazon-s3': {
+      endpoint: 'https://s3.us-east-1.amazonaws.com'
+    }
+  }
 })
