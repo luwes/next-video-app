@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import NextVideo from 'next-video';
-import { ReactPlayerAsVideo } from './video';
+import { PlainVideo } from './video';
 import awesomeVideo from '/videos/BBB-720p-1min.mp4';
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
         <style>{`.flex { display: flex; }`}</style>
         <NextVideo
           className="flex"
-          style={{ width: 640, aspectRatio: 16 / 9, '--media-object-fit': 'cover' }}
+          style={{ width: 640, '--media-object-fit': 'cover' }}
           src={awesomeVideo}
           controls={true}
         />
