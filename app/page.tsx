@@ -2,7 +2,9 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import NextVideo from 'next-video';
 import { PlainVideo } from './video';
+// @ts-ignore
 import awesomeVideo from '/videos/BBB-720p-1min.mp4';
+// import awesomeVideo from 'https://www.dropbox.com/s/dqzkxva260lo7mm/Mad%20Max%20Cropped.mp4?dl=1';
 
 export default function Home() {
   return (

@@ -3,7 +3,7 @@
 
 import NextVideo from 'next-video';
 // import type { VideoProps, VideoLoaderProps } from 'next-video';
-// import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player';
 
 const API_ROUTE = '/api/video';
 
@@ -22,5 +22,5 @@ export function PlainVideo(props: any) {
   let { asset, src, poster, blurDataURL, ...rest } = props;
   let config = { file: { attributes: { poster } } };
 
-  return <video url={src} config={config} width="100%" height="100%" {...rest} />;
+  return <ReactPlayer url={src} config={config} width="100%" height="100%" {...rest} />;
 }
